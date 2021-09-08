@@ -1,16 +1,17 @@
 // Código del Cuadrado.
 // Showing the sides of a square.
 const squareSides = (side) => {
-  console.log("Los lados de tu cuadrado miden: " + side + "cm");
+  return side;
 };
-
 
 // Calculating square perimeter.
 const squarePerimeter = (side) => {
   const SIDES_SQUARE = 4;
+  if (side === NaN) {
+    throw Error
+  }
   return side * SIDES_SQUARE;
 };
-squarePerimeter(5);
 
 // Calculating square area.
 const squareArea = (side) => {
@@ -19,28 +20,28 @@ const squareArea = (side) => {
 
 // Código del Triangulo.
 
-  const ladoTriangulo = side1;
-  const ladoTriangulo2 = side2;
-  const baseTriangulo = base;
+// altura
+function triangleHigh(high) {
+  return high;
+}
 
+// Perimetro
+function trianglePerimeter(side1, side2, base) {
+  return side1 + side2 + base;
+}
 
+// Area
 
-  const alturaTriangulo = 5.5;
-
-  const perimetroTriangulo = ladoTriangulo + ladoTriangulo2 + baseTriangulo;
-
-  const areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
-
-};
-
-measuringTriangle(3, 3, 5);
+function triangleArea(base, high) {
+  return (base * high) / 2;
+}
 
 // Código del Círculo.
 
 const PI = Math.PI;
 
 // radio
-const radio = null;
+const radioCircle = null;
 
 // diametro
 function diametro(radio) {
@@ -49,11 +50,11 @@ function diametro(radio) {
 
 // circunferencia
 
-function circunferencia(diametro, pi) {
-  return Math.floor(diametro * pi);
+function circunferencia(diametro) {
+  return Math.floor(diametro * PI);
 }
 
 // area
-function areaCirculo(radio, pi) {
-  Math.floor(radio * radio * pi);
+function areaCirculo(radio) {
+  Math.floor(radio * radio) * PI;
 }
