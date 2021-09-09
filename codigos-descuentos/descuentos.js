@@ -30,12 +30,20 @@ const coupons = [
 function validatingCoupons(code) {
   code = productDiscount.value;
   let realCode = code.toLowerCase();
-
-  if (!realCode) {
-    throw new Error("Woops, tu código no es válido..");
-  } else {
-    applyingDiscount();
+  let validCode = coupons;
+  try {
+    if (realCode != validCode.name) {
+      throw new Error("Woops, tu código no es válido..");
+    } else {
+      applyingDiscount(validCode);
+    }
+  } catch(error){
+    console.error(error.message)
   }
+}
+
+function applyingDiscount(discount) {
+  discount(price, discount.discount)
 }
 
 // Logic
