@@ -5,6 +5,7 @@ const section = document.querySelector("section");
 
 
 const text = document.createElement("p");
+// This is an scalable solution but is easier use the innerText like the class.
 
 section.append(container);
 container.append(text);
@@ -22,4 +23,3 @@ function discount(price, discount) {
   return newPrice;
 }
 
-// This is an scalable solution but is easier use the innerText like the class.
