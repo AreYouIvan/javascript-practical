@@ -39,7 +39,8 @@ function validatingCoupons(code) {
     for (let coupon of coupons) {
       if (userCode === coupon.name) {
         const discountToBeApplied = coupon.discount;
-        return applyingDiscount(discountToBeApplied);
+        // return applyingDiscount(discountToBeApplied);
+          return applyingDiscount(discountToBeApplied);
       }
     }
     throw new Error("Woops, tu código no es válido..");
@@ -50,12 +51,11 @@ function validatingCoupons(code) {
 
 }
 
-function applyingDiscount(discount) {
-  return showPrice(discount);
-}
+// function applyingDiscount(discount) {
+// }
 
 // Logic
-function showPrice(discount) {
+function applyingDiscount(discount) {
   // Element content value
   const priceValue = productPrice.value;
   text.textContent = `El precio del producto es ${priceWithDiscount(
