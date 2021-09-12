@@ -17,3 +17,10 @@
 - Fourth Step: Integer JS with HTML
 
 I get a challenge and I've finishing but I've used another way to solve it. I think that we should try another options to explain my perspective about logic.
+
+## Workshop #3: Average, median and moda
+
+- First Step: Define the formulas
+- Second Step: Implement formulas in JavaScript
+- Third Step: Create functions
+- [Challenge] Fourth Step: Integer JS with HTML
