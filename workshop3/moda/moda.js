@@ -8,7 +8,6 @@ const lista = [1, 2, 2, 2, 2, 3, 3, 4, 6, 8];
 // });
 
 function makingModa(arr) {
-  debugger
   const arrToObject = {};
   // Go through the array and returns another one.
   arr.map((e) => {
