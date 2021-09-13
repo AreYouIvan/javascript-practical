@@ -2,7 +2,6 @@ const lista = [2000, 50, 400, 200, 1100, 1000];
 
 // This is the script to sort from minor to major the values of an array.
 lista.sort((a, b) => {
-  // console.log(`a: ${a} b: ${b} = ${ a - b}`);
   return a - b;
 });
 
