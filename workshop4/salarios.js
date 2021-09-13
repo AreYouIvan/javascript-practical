@@ -80,3 +80,4 @@ colombia.push({
   salary: 100000000,
 });
 
+// export default colombia;

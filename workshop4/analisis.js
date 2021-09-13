@@ -14,5 +14,19 @@ const salariosColSorted = salariosCol.sort((a, b) => {
 
 const salariosMediana = (arr) => {
   const isPair = arr.length % 2 === 0;
-  isPair ? arr.length / 2 : parseInt(arr.length / 2);
+  let mitad = null;
+  if (isPair) {
+    mitad = arr[arr.length / 2];
+    let mitad2 = arr[arr.length / 2 - 1];
+    return average([mitad, mitad2]);
+  } else {
+    mitad = parseInt(arr.length / 2);
+    return average(mitad);
+  }
+};
+
+const average = (list) => {
+  let elements = list.length;
+  const sumOfList = list.reduce((a, b) => a + b);
+  return sumOfList / elements;
 };
