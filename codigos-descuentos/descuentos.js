@@ -39,7 +39,6 @@ function validatingCoupons(code) {
     for (let coupon of coupons) {
       if (userCode === coupon.name) {
         const discountToBeApplied = coupon.discount;
-        // return applyingDiscount(discountToBeApplied);
           return applyingDiscount(discountToBeApplied);
       }
     }
@@ -50,9 +49,6 @@ function validatingCoupons(code) {
   }
 
 }
-
-// function applyingDiscount(discount) {
-// }
 
 // Logic
 function applyingDiscount(discount) {
