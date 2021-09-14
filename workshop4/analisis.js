@@ -25,8 +25,24 @@ const salariosMediana = (arr) => {
   }
 };
 
+// Utils
+
 const average = (list) => {
   let elements = list.length;
   const sumOfList = list.reduce((a, b) => a + b);
   return sumOfList / elements;
 };
+
+
+// Calculate percent.
+const spliceStart = (salariosColSorted.length * 90) / 100;
+const spliceCount = salariosColSorted.length - spliceStart;
+
+const medianaGeneral = salariosMediana(salariosColSorted);
+
+const salariosColTop10 = salariosColSorted.splice(spliceStart, spliceCount);
+
+const mediana10Percent = salariosMediana(salariosColTop10);
+
+
+console.log({medianaGeneral, mediana10Percent});
