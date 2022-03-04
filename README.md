@@ -1,4 +1,4 @@
-# Javascript Pratical
+# Javascript Practical
 
 ---
 
